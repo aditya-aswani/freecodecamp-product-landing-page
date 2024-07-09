@@ -1,6 +1,22 @@
 img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+}
+
+#header-img {
+    position: fixed;
+    top: 1;
+    left: 1;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 30px;
+    left: 120px;
+    width: 100%;
+}
+
+main {
+    padding-top: 100px;
 }
 
 @media {

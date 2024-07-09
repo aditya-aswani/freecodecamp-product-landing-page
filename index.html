@@ -8,25 +8,29 @@
     </head>
     <body>
         <header id="header">
-            <img src="./images/lotus_logo.png" alt="Lotus Logo"/>
             <nav id="nav-bar">
-                <a href="#Home" class="nav-link"></a>
-                <a href="#How It Works" class="nav-link"></a>
-                <a href="#FAQ" class="nav-link"></a>
+                <a href="#Home" class="nav-link">Home</a>
+                <a href="#How It Works" class="nav-link">How It Works</a>
+                <a href="#FAQs" class="nav-link">FAQs</a>
             </nav>
+            <img id="header-img" src="https://images.unsplash.com/photo-1533045812573-97218e72dd28?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lotus Logo"/>
         </header>
         <main>
             <section id="Home">
-                <form action="https://www.freecodecamp.com/email-submit" method="post">
-                    <label for="user-email">Email:</label>
-                    <input type="email" id="user-email" name="email" required>
+                <h1>Home</h1>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                     <input type="submit">
                 </form>
             </section>
             <section id="How It Works">
+                <h1>How It Works</h1>
                 <iframe id="video" src="https://www.youtube.com/embed/Ct6BUPvE2sM?si=-BlxF8GozK_lV9hN"></iframe>
             </section>
-            <section id="FAQ"></section>
+            <section id="FAQs">
+                <h1>FAQs</h1>
+            </section>
         </main>
     </body>
 </html>
