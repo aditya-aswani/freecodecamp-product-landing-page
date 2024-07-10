@@ -1,23 +1,38 @@
-img {
-    width: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: #DFBBB0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #header-img {
-    position: fixed;
-    top: 1;
-    left: 1;
+    border-radius: 50%;
+    width: 100px;
+    margin-right: 20px;
+}
+
+#header-title {
+
 }
 
 #nav-bar {
-    position: fixed;
-    top: 30px;
-    left: 120px;
-    width: 100%;
+    display: flex;
+    gap: 20px;
 }
 
 main {
-    padding-top: 100px;
-    display: flex;
+    padding-top: 20px;
 }
 
 @media {
