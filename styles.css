@@ -35,15 +35,11 @@ nav {
     z-index: 1000;
 }
 
-.logo-title-container {
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
 #header-img {
     border-radius: 50%;
-    width: 100px;
+    width: 10vw;
+    max-width: 100px;
+    min-width: 50px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -82,48 +78,21 @@ main {
 .snap-section {
     scroll-snap-align: start;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
 }
 
-.home-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+.grid-container {
     height: 100%;
-}
-
-.home-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px;
-    flex: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 #home-img {
-    width: 400px;
+    max-height: 70vh;
+    width: auto;
     border-radius: 5%;
-}
-
-#form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-label {
-    font-size: 1.25rem;
-}
-
-input[type="email"], input[type="submit"] {
-    padding: 10px;
-    font-size: 1rem;
 }
 
 @media {
