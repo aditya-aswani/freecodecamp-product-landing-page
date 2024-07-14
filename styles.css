@@ -25,6 +25,7 @@ nav {
 
 #header {
     background-color: #DFBBB0;
+    height: 120px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -71,28 +72,66 @@ nav {
 
 main {
     scroll-snap-type: y mandatory;
-    height: 100vh;
+    height: calc(100vh - 120px);
     overflow-y: scroll;
 }
 
 .snap-section {
     scroll-snap-align: start;
-    height: 100vh;
-    padding: 20px;
+    height: 100%;
 }
 
 .grid-container {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* border: 2px solid black; */
+}
+
+.grid-item {
+    border: 1px solid red;
+}
+
+#headline {
+    grid-row: 3;
+    grid-column: 5 / span 3;
+}
+
+#call-to-action {
+    grid-row: 3;
+    grid-column: 5 / span 2;
+    align-self: end;
+}
+
+#button {
+    grid-row: 4;
+    grid-column: 5 / span 2;
+    align-self: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7b00ce;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #5b0097;
 }
 
 #home-img {
-    max-height: 70vh;
+    height: 100%;
     width: auto;
     border-radius: 5%;
+    grid-row: 2 / span 4;
+    grid-column: 9;
 }
 
 /* @media {
