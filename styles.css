@@ -479,6 +479,61 @@ nav {
         grid-column: 8 / span 12;
     }
 
+    #faqs-headline {
+        grid-row: 1;
+        grid-column: 8 / span 3;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .faqs {
+        align-self: center;
+        border: 2px solid #DFBBB0;
+        border-radius: 10%;
+        padding: 5px;
+        margin: 1px;
+    }
+    
+    .faq-question {
+        cursor: pointer;
+    }
+    
+    .faq-answer {
+        display: none;
+        margin-top: 0.5rem;
+        padding-left: 20px;
+        line-height: 1.35;
+    }
+    
+    .faq-toggle:checked + .faq-question + .faq-answer {
+        display: block;
+    }
+    
+    #q1 {
+        grid-row: 2;
+        grid-column: 8 / span 3;
+    }
+    
+    #q2 {
+        grid-row: 3;
+        grid-column: 8 / span 3;
+    }
+    
+    #q3 {
+        grid-row: 4;
+        grid-column: 8 / span 3;
+    }
+    
+    #q4 {
+        grid-row: 5;
+        grid-column: 8 / span 3;
+    }
+    
+    #q5 {
+        grid-row: 6;
+        grid-column: 8 / span 3;
+    }
+
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
