@@ -298,3 +298,57 @@ nav {
     grid-row: 6;
     grid-column: 8 / span 3;
 }
+
+@media (max-width: 600px) {
+    main {
+        background-color: red;
+    }
+
+    #header-img {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #header-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+    }
+    
+    #nav-bar {
+        gap: 0;
+        margin-right: 0.25rem;
+        flex-direction: column;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    main {
+        background-color: orange;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    main {
+        background-color: yellow;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    main {
+        background-color: green;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    main {
+        background-color: blue;
+    }
+}
