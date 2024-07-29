@@ -301,7 +301,15 @@ nav {
 
 @media (max-width: 600px) {
     main {
-        /* background-color: red; */
+        scroll-snap-type: y none;
+        /* height: calc(100vh - 120px);
+        overflow-y: scroll;
+        scroll-behavior: smooth; */
+    }
+
+    .snap-section {
+        scroll-snap-align: none;
+        /* height: 100%; */
     }
 
     #header-img {
