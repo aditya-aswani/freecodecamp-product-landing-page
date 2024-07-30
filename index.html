@@ -22,65 +22,83 @@
         </header>
         <main>
             <section id="Home" class="snap-section">
-                    <div class="grid-container-1">
-                        <h2 id="home-headline">Finding it hard to build a meditation habit?</h2>
-                        <p id="home-call-to-action">Then find a buddy you can meditate with so you can hold each other accountable!</p>
-                        <a href="https://forms.gle/PsGMapDXZnsbtmoi6" target="_blank" rel="noopener noreferrer" id="button">Sign Up</a>
-                        <img id="home-img" src="./images/meditate_together.jpg" />
+                    <div id="home-items">
+                        <div id="home-text">
+                            <h2>Finding it hard to build a meditation habit?</h2>
+                            <p>Then find a buddy you can meditate with so you can hold each other accountable!</p>
+                            <a href="https://forms.gle/PsGMapDXZnsbtmoi6" target="_blank" rel="noopener noreferrer" id="button">Sign Up</a>
+                        </div>
+                        <div id="home-img">
+                            <img id="home-img" src="./images/meditate_together.jpg" />
+                        </div>
                     </div>
             </section>
-            <section id="How It Works" class="snap-section">
-                <div class="grid-container-2">
-                    <h2 id="hiw-headline">How It Works</h2>
-                    <h3 id="step-1" class="step">Fill</h3>
-                    <img id="form-img" class="hiw-img" src="./images/form.png" />
-                    <p id="step-1-desc" class="desc">Complete this <a id="form-link" href="https://forms.gle/PsGMapDXZnsbtmoi6" target="_blank" rel="noopener noreferrer">form</a> and get matched with a buddy.</p>
-                    <h3 id="step-2" class="step">Commit</h3>
-                    <img id="handshake-img" class="hiw-img" src="./images/handshake.png" />
-                    <p id="step-2-desc" class="desc">Read this <a id="doc-link" href="https://docs.google.com/document/d/1o5d-z10db1FwW4gakMaNk-56hUXOrfGiRlpNImX5Ol4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">doc</a> and commit to the guidelines.</p>
-                    <h3 id="step-3" class="step">Schedule</h3>
-                    <img id="calendar-img" class="hiw-img" src="./images/calendar.png" />
-                    <p id="step-3-desc" class="desc">Receive and confirm your meditation schedule calendar invites.</p>
-                    <h3 id="step-4" class="step">Meditate</h3>
-                    <img id="meditator-img" class="hiw-img" src="./images/meditator.png" />
-                    <p id="step-4-desc" class="desc">Meditate together as outlined in the schedule.</p>
-                    <h3 id="step-5" class="step">Extend</h3>
-                    <img id="mountain-img" class="hiw-img" src="./images/mountain.png" />
-                    <p id="step-5-desc" class="desc">Consider meditating together after the month is over.</p>
+            <section class="snap-section">
+                <div id="hiw-items">
+                    <div>
+                        <h2>How It Works</h2>
+                    </div>
+                    <div id="hiw-steps">
+                        <div class="hiw-specific-step">
+                            <h3>Fill</h3>
+                            <img class="hiw-img" src="./images/form.png" />
+                            <p class="desc">Complete this <a id="form-link" href="https://forms.gle/PsGMapDXZnsbtmoi6" target="_blank" rel="noopener noreferrer">form</a> and get matched with a buddy.</p>
+                        </div>
+                        <div class="hiw-specific-step">
+                            <h3>Commit</h3>
+                            <img class="hiw-img" src="./images/handshake.png" />
+                            <p class="desc">Read this <a id="doc-link" href="https://docs.google.com/document/d/1o5d-z10db1FwW4gakMaNk-56hUXOrfGiRlpNImX5Ol4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">doc</a> and commit to the guidelines.</p>
+                        </div>
+                        <div class="hiw-specific-step">
+                            <h3>Schedule</h3>
+                            <img class="hiw-img" src="./images/calendar.png" />
+                            <p class="desc">Receive and confirm your meditation schedule calendar invites.</p>
+                        </div>
+                        <div class="hiw-specific-step">
+                            <h3>Meditate</h3>
+                            <img class="hiw-img" src="./images/meditator.png" />
+                            <p class="desc">Meditate together as outlined in the schedule.</p>
+                        </div>
+                        <div class="hiw-specific-step">
+                            <h3>Extend</h3>
+                            <img class="hiw-img" src="./images/mountain.png" />
+                            <p class="desc">Consider meditating together after the month is over.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="FAQs" class="snap-section">
                 <div id="faqs-flex">
-                    <h2 id="faqs-headline">FAQs</h2>
-                    <div id="q1" class="faqs">
+                    <h2>FAQs</h2>
+                    <div class="faqs">
                         <input type="checkbox" id="faq1" class="faq-toggle">
                         <label for="faq1" class="faq-question">Who is Meditation Buddies for?</label>
                         <div class="faq-answer">
                         <p>This program is for anyone who would like to cultivate a regular meditation practice while also supporting another person in doing the same.</p>
                         </div>
                     </div>
-                    <div id="q2" class="faqs">
+                    <div class="faqs">
                         <input type="checkbox" id="faq2" class="faq-toggle">
                         <label for="faq2" class="faq-question">How much do I need to meditate?</label>
                         <div class="faq-answer">
                             <p>Whatever length you and your buddy agree to! Currently, buddies meditate for as little as 10 minutes or as long as 30 minutes.</p>
                         </div>
                     </div>
-                    <div id="q3" class="faqs">
+                    <div class="faqs">
                         <input type="checkbox" id="faq3" class="faq-toggle">
                         <label for="faq3" class="faq-question">What kind of meditation will I do?</label>
                         <div class="faq-answer">
                             <p>Whatever kind you and your buddy decide! You both can also do different types of meditation during the same session.</p>
                         </div>
                     </div>
-                    <div id="q4" class="faqs">
+                    <div class="faqs">
                         <input type="checkbox" id="faq4" class="faq-toggle">
                         <label for="faq4" class="faq-question">What if I'm completely new to meditation?</label>
                         <div class="faq-answer">
                             <p>That's totally okay! Those new to meditation can reach out to Aditya for meditation-related questions. You can email him at adityaaswani1 (at) gmail (dot) com.</p>
                         </div>
                     </div>
-                    <div id="q5" class="faqs">
+                    <div class="faqs">
                         <input type="checkbox" id="faq5" class="faq-toggle">
                         <label for="faq5" class="faq-question">I have a question that is not on this list.</label>
                         <div class="faq-answer">
@@ -90,7 +108,7 @@
                 </div>
             </section>
             <footer>
-                <p>Made with ❤️ in NYC by Aditya</p>
+                <p>Made with ❤️ in NYC by <a id="portfolio-link" href="https://aditya-aswani.github.io/freecodecamp-personal-portfolio-webpage/" target="_blank" rel="noopener noreferrer">Aditya</a></p>
             </footer>
         </main>
     </body>
