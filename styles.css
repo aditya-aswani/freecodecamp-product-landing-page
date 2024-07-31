@@ -231,12 +231,20 @@ footer {
     
     main {
         scroll-snap-type: y none;
-        height: calc(100dvh - 120px);
+        height: 87dvh;
+    }
+
+    #header {
+        height: 13dvh;
     }
 
     .snap-section {
         scroll-snap-align: none;
         height: auto;
+    }
+
+    #header {
+        height: 13dvh;
     }
 
     #header-img {
@@ -317,7 +325,11 @@ footer {
     
     main {
         scroll-snap-type: y none;
-        height: calc(100dvh - 120px);
+        height: 79dvh;
+    }
+
+    #header {
+        height: 21dvh;
     }
 
     .snap-section {
@@ -403,7 +415,11 @@ footer {
     
     main {
         scroll-snap-type: y none;
-        height: calc(100dvh - 120px);
+        height: calc(100dvh - 6rem);
+    }
+
+    #header {
+        height: 6rem;
     }
 
     .snap-section {
@@ -488,7 +504,11 @@ footer {
     
     main {
         scroll-snap-type: y none;
-        height: calc(100dvh - 120px);
+        height: 87dvh;
+    }
+
+    #header {
+        height: 13dvh;
     }
 
     .snap-section {
@@ -499,6 +519,10 @@ footer {
     #header-img {
         margin-right: 0;
         margin-left: 0;
+    }
+
+    #header-img {
+        width: 5dvw;
     }
 
     #header-title {
