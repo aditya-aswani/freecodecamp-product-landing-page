@@ -208,10 +208,19 @@ footer {
     height: 10rem;
     background-color: #DFBBB0;
     color: #743F2F;
-    font-size: 1.5rem;
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
+}
+
+#access-link {
+    color: #743F2F;
+}
+
+footer h1 {
+    font-size: 1.5rem;
 }
 
 @media (max-width: 600px) {
@@ -303,7 +312,7 @@ footer {
     }
 
     footer {
-        height: 5rem;
+        height: 7rem;
         font-size: 1.2rem;
     }
 
@@ -393,7 +402,7 @@ footer {
     }
 
     footer {
-        height: 5rem;
+        height: 7rem;
         font-size: 1.2rem;
     }
 
@@ -483,7 +492,7 @@ footer {
     }
 
     footer {
-        height: 5rem;
+        height: 7rem;
         font-size: 1.2rem;
     }
 }
@@ -576,7 +585,7 @@ footer {
     }
 
     footer {
-        height: 5rem;
+        height: 7rem;
         font-size: 1.2rem;
     }
 }
