@@ -64,6 +64,13 @@ nav {
     margin-right: 20px;
 }
 
+.three-line-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
 .nav-link {
     text-decoration: none;
     font-size: 1.3rem;
@@ -94,6 +101,10 @@ nav {
     flex-direction: column;
     gap: 1rem;
     width: 33%;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 #button {
@@ -183,23 +194,70 @@ nav {
     align-self: center;
     border: 2px solid #DFBBB0;
     border-radius: 10%;
-    padding: 5px;
-    margin: 1px;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 .faq-question {
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #743F2F;
+    width: 100%;
+}
+
+.faq-question:focus {
+    outline: 2px solid #7b00ce;
 }
 
 .faq-answer {
-    display: none;
     margin-top: 0.5rem;
     padding-left: 20px;
-    line-height: 1.35;
+    line-height: 1.5;
 }
 
-.faq-toggle:checked + .faq-question + .faq-answer {
-    display: block;
+.stars {
+    color: gold;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.stars span {
+    margin-right: 2px;
+}
+
+#testimonials-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#testimonials-items {
+    display: grid;
+    grid-gap: 2rem;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(33.3333% - 2rem);
+    border: 2px solid #DFBBB0;
+    border-radius: 10%;
+    padding: 1rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    margin-bottom: 1rem;
+    line-height: 2rem;
 }
 
 footer {
@@ -249,9 +307,26 @@ footer h1 {
     }
     
     #nav-bar {
-        gap: 0.5rem;
         margin-right: 0.25rem;
         flex-direction: column;
+        display: none;
+        gap: 20px;
+        background-color: #DFBBB0;
+        padding: 10px;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .three-line-menu {
+        display: block;
+    }
+
+    #nav-bar.open {
+        display: flex;
     }
     
     .nav-link {
@@ -341,9 +416,26 @@ footer h1 {
     }
     
     #nav-bar {
-        gap: 0.5rem;
         margin-right: 0.25rem;
         flex-direction: column;
+        display: none;
+        gap: 20px;
+        background-color: #DFBBB0;
+        padding: 10px;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .three-line-menu {
+        display: block;
+    }
+
+    #nav-bar.open {
+        display: flex;
     }
     
     .nav-link {
@@ -433,9 +525,26 @@ footer h1 {
     }
     
     #nav-bar {
-        gap: 0.5rem;
         margin-right: 0.25rem;
         flex-direction: column;
+        display: none;
+        gap: 20px;
+        background-color: #DFBBB0;
+        padding: 10px;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .three-line-menu {
+        display: block;
+    }
+
+    #nav-bar.open {
+        display: flex;
     }
     
     .nav-link {
@@ -528,9 +637,26 @@ footer h1 {
     }
     
     #nav-bar {
-        gap: 0.5rem;
         margin-right: 0.25rem;
         flex-direction: column;
+        display: none;
+        gap: 20px;
+        background-color: #DFBBB0;
+        padding: 10px;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .three-line-menu {
+        display: block;
+    }
+
+    #nav-bar.open {
+        display: flex;
     }
     
     .nav-link {
