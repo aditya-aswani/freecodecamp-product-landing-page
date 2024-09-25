@@ -33,7 +33,9 @@
                 <a href="#testimonials-section" class="nav-link">Testimonials</a>
             </nav>
             <div id="three-line-menu" class="three-line-menu">
-                &#9776;
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </header>
         <main>
@@ -41,7 +43,7 @@
                     <div id="home-items">
                         <div id="home-text">
                             <h2>Finding it hard to build a meditation habit?</h2>
-                            <p>Then find a pal you can meditate with so you can hold each other accountable! The deadline for joining the next batch is <span class="bold">October 3rd, 2024</span>.</p>
+                            <p>Then find a pal you can meditate with so you can find accountability! The deadline for joining the next cohort is <span class="bold">October 3rd, 2024</span>.</p>
                             <a href="https://forms.gle/SbXR5tXiQXvPpoyH9" target="_blank" rel="noopener noreferrer" id="button">Sign Up</a>
                         </div>
                         <div id="home-img">
@@ -220,9 +222,11 @@
             <p><a id="access-link" href="https://docs.google.com/document/d/1f9oRWSw4Xo9EUrIqds_hPFsBN1JoqwpgqJt41F7wRyY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Accessibility Statement</a></p>
         </footer>
         <script>
+
             document.getElementById("three-line-menu").addEventListener("click", function() {
+                this.classList.toggle("open");
                 document.getElementById("nav-bar").classList.toggle("open");
-            });
+            })
 
             document.addEventListener('DOMContentLoaded', function() {
                 const faqQuestions = document.querySelectorAll('.faq-question');

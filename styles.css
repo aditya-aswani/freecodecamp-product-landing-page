@@ -103,6 +103,10 @@ nav {
     width: 33%;
 }
 
+#home-text p {
+    line-height: 2;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -310,17 +314,18 @@ footer h1 {
     
     #header {
         height: 7rem;
+        display: flex;
+        padding: 20px;
     }
 
     #header-img {
-        margin-right: 0;
-        margin-left: 0;
         width: 4rem;
+        position: relative;
+        margin-left: 0rem;
     }
 
     #header-title {
-        font-size: 1.5rem;
-        transform: translateX(-76%);
+        font-size: 1.5 rem;
     }
     
     #nav-bar {
@@ -331,7 +336,7 @@ footer h1 {
         background-color: #DFBBB0;
         padding: 10px;
         position: absolute;
-        top: 70px;
+        top: 85px;
         right: 10px;
         width: 150px;
         border-radius: 5px;
@@ -340,6 +345,48 @@ footer h1 {
 
     .three-line-menu {
         display: block;
+        width: 35px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 0rem;
+    }
+    
+    .three-line-menu div {
+        background-color: #743F2F;
+        height: 5px;
+        width: 100%;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center;
+    }
+
+    .line1 {
+        top: 0;
+    }
+    
+    .line2 {
+        top: 12px;
+    }
+
+    .line3 {
+        top: 24px;
+    }
+
+    .three-line-menu.open .line1 {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+    
+    .three-line-menu.open .line2 {
+        opacity: 0; /* Hide the middle line */
+    }
+    
+    .three-line-menu.open .line3 {
+        transform: rotate(-45deg);
+        top: 12px;
     }
 
     #nav-bar.open {
@@ -400,6 +447,25 @@ footer h1 {
         width: 100%;
     }
 
+    #testimonials-section {
+        margin-bottom: 1rem;
+    }
+
+    #testimonials-section h2 {
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #testimonials-items {
+        place-items: center;
+    }
+
+    .testimonial {
+        width: 90%;
+        border-radius: 15px;
+    }
+
     footer {
         height: 7rem;
         font-size: 1.2rem;
@@ -420,16 +486,18 @@ footer h1 {
     
     #header {
         height: 7rem;
+        display: flex;
+        padding: 20px;
     }
 
     #header-img {
-        margin-right: 0;
-        margin-left: 0;
         width: 4rem;
+        position: relative;
+        margin-left: 0.75rem;
     }
 
     #header-title {
-        font-size: 1.5rem;
+        font-size: 1.5 rem;
     }
     
     #nav-bar {
@@ -440,7 +508,7 @@ footer h1 {
         background-color: #DFBBB0;
         padding: 10px;
         position: absolute;
-        top: 70px;
+        top: 85px;
         right: 10px;
         width: 150px;
         border-radius: 5px;
@@ -449,6 +517,48 @@ footer h1 {
 
     .three-line-menu {
         display: block;
+        width: 35px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 1.5rem;
+    }
+    
+    .three-line-menu div {
+        background-color: #743F2F;
+        height: 5px;
+        width: 100%;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center;
+    }
+
+    .line1 {
+        top: 0;
+    }
+    
+    .line2 {
+        top: 12px;
+    }
+
+    .line3 {
+        top: 24px;
+    }
+
+    .three-line-menu.open .line1 {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+    
+    .three-line-menu.open .line2 {
+        opacity: 0; /* Hide the middle line */
+    }
+    
+    .three-line-menu.open .line3 {
+        transform: rotate(-45deg);
+        top: 12px;
     }
 
     #nav-bar.open {
@@ -529,16 +639,18 @@ footer h1 {
     
     #header {
         height: 7rem;
+        display: flex;
+        padding: 20px;
     }
 
     #header-img {
-        margin-right: 0;
-        margin-left: 0;
         width: 4rem;
+        position: relative;
+        margin-left: 0.75rem;
     }
 
     #header-title {
-        font-size: 2rem;
+        font-size: 1.5 rem;
     }
     
     #nav-bar {
@@ -549,15 +661,57 @@ footer h1 {
         background-color: #DFBBB0;
         padding: 10px;
         position: absolute;
-        top: 70px;
+        top: 85px;
         right: 10px;
-        width: 150px;
+        width: 13rem;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .three-line-menu {
         display: block;
+        width: 35px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 1.5rem;
+    }
+    
+    .three-line-menu div {
+        background-color: #743F2F;
+        height: 5px;
+        width: 100%;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center;
+    }
+
+    .line1 {
+        top: 0;
+    }
+    
+    .line2 {
+        top: 12px;
+    }
+
+    .line3 {
+        top: 24px;
+    }
+
+    .three-line-menu.open .line1 {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+    
+    .three-line-menu.open .line2 {
+        opacity: 0; /* Hide the middle line */
+    }
+    
+    .three-line-menu.open .line3 {
+        transform: rotate(-45deg);
+        top: 12px;
     }
 
     #nav-bar.open {
@@ -637,20 +791,18 @@ footer h1 {
     
     #header {
         height: 7rem;
+        display: flex;
+        padding: 20px;
     }
 
     #header-img {
-        margin-right: 0;
-        margin-left: 0;
         width: 4rem;
-    }
-
-    #header-img {
-        width: 8dvw;
+        position: relative;
+        margin-left: 0.75rem;
     }
 
     #header-title {
-        font-size: 3rem;
+        font-size: 1.5 rem;
     }
     
     #nav-bar {
@@ -661,15 +813,57 @@ footer h1 {
         background-color: #DFBBB0;
         padding: 10px;
         position: absolute;
-        top: 70px;
+        top: 85px;
         right: 10px;
-        width: 150px;
+        width: 15rem;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .three-line-menu {
         display: block;
+        width: 35px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 1.5rem;
+    }
+    
+    .three-line-menu div {
+        background-color: #743F2F;
+        height: 5px;
+        width: 100%;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center;
+    }
+
+    .line1 {
+        top: 0;
+    }
+    
+    .line2 {
+        top: 12px;
+    }
+
+    .line3 {
+        top: 24px;
+    }
+
+    .three-line-menu.open .line1 {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+    
+    .three-line-menu.open .line2 {
+        opacity: 0; /* Hide the middle line */
+    }
+    
+    .three-line-menu.open .line3 {
+        transform: rotate(-45deg);
+        top: 12px;
     }
 
     #nav-bar.open {
