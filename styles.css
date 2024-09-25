@@ -590,6 +590,10 @@ footer h1 {
         height: 17rem;
     }
 
+    #How\ It\ Works {
+        scroll-margin-top: 5rem;
+    }
+
     #hiw-paragraph {
         width: 80%;
         line-height: 2;
@@ -615,6 +619,7 @@ footer h1 {
 
     #FAQs {
         height: auto;
+        scroll-margin-top: 5rem;
     }
 
     #faqs-items {
@@ -623,6 +628,11 @@ footer h1 {
 
     .faqs {
         width: 100%;
+    }
+
+    #testimonials-section {
+        margin-bottom: 1rem;
+        scroll-margin-top: 8.5rem;
     }
 
     footer {
@@ -743,6 +753,10 @@ footer h1 {
         height: 17rem;
     }
 
+    #How\ It\ Works {
+        scroll-margin-top: 5rem;
+    }
+
     #hiw-paragraph {
         width: 80%;
         line-height: 2;
@@ -768,6 +782,7 @@ footer h1 {
 
     #FAQs {
         height: auto;
+        scroll-margin-top: 5rem;
     }
 
     #faqs-items {
@@ -776,6 +791,11 @@ footer h1 {
 
     .faqs {
         width: 100%;
+    }
+
+    #testimonials-section {
+        margin-bottom: 1rem;
+        scroll-margin-top: 8.5rem;
     }
 
     footer {
@@ -895,6 +915,10 @@ footer h1 {
         height: 17rem;
     }
 
+    #How\ It\ Works {
+        scroll-margin-top: 5rem;
+    }
+
     #hiw-paragraph {
         width: 80%;
         line-height: 2;
@@ -920,6 +944,7 @@ footer h1 {
 
     #FAQs {
         height: auto;
+        scroll-margin-top: 5rem;
     }
 
     #faqs-items {
@@ -928,6 +953,11 @@ footer h1 {
 
     .faqs {
         width: 100%;
+    }
+
+    #testimonials-section {
+        margin-bottom: 1rem;
+        scroll-margin-top: 8.5rem;
     }
 
     footer {
