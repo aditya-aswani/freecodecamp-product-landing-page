@@ -86,6 +86,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-margin-top: 9rem;
 }
 
 #home-items {
@@ -133,6 +134,11 @@ nav {
     height: 35rem;
     width: auto;
     border-radius: 5%;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #743F2F;
 }
 
 #hiw-items {
