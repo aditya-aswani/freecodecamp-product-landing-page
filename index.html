@@ -205,6 +205,25 @@
             document.getElementById("three-line-menu").addEventListener("click", function() {
                 document.getElementById("nav-bar").classList.toggle("open");
             });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const faqQuestions = document.querySelectorAll('.faq-question');
+
+                faqQuestions.forEach(function(question) {
+                    question.addEventListener('click', function() {
+                        const answer = this.parentNode.nextElementSibling;
+                        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+                        this.setAttribute('aria-expanded', !isExpanded);
+
+                        if(isExpanded) {
+                            answer.hidden = true;
+                        } else {
+                            answer.hidden = false;
+                        }
+                    });
+                });
+            });
         </script>
     </body>
 </html>
